@@ -1,25 +1,19 @@
-//breakpoints
-
-@media(min-width: 64em){
-    //styles go here
+@mixin backgrounds($image){
+	background-image: url($image);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-//640px 1024px 1400px
-$breakpoints-up: ("medium": "40em", "large": "64em","xlarge": "87.5em");
-
-//639px 1023px 1399px
-$breakpoints-down: ("small":"40em", "medium":"64em" , "large": "87.5em");
-
-@mixin breakpoint-up($size) {
-    @media(min-width:map-get($breakpoints-up, $size)){
-        @content;
-
-    }
-    
-}
-@mixin breakpoint-down($size) {
-    @media(max-width:map-get($breakpoints-down, $size)){
-        @content;
-
-    }
-    
+@mixin buttons($bgColor, $fontColor){
+	@include borders(.75em);
+	background-color: $bgColor;
+	color: $fontColor;
+	font-size: 20px;
+	padding: .5rem 1.5rem;
+	text-decoration: none;
+	font-weight: $font-weight-bold;
+	@include transitions(250);
+	&:hover{
+		transform: scale(1.05);
+	}
 }

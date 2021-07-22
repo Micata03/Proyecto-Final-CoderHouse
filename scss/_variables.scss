@@ -1,11 +1,65 @@
 
 $fuente: 'Overpass', sans-serif;
-$color-fuente: #444;
-$bgColorBlack: #000;
-$color-hover: #394A7C;
-$bg-color-nav: #4d4d4d;
+$font-color-main: #282828;
 
-//FOnt Sizes
-$font-sm: 0.875rem; //14px
-$font-med: 1.125rem; //18px
-$font-lg: 2.125rem;
+
+$bg-color-footer: #666666;
+
+$bg-body: #fafafa;
+$background-color-grey: #c7c7c7;
+
+
+$max-site: 1140px;
+
+
+$font-weight-bold: 700;
+
+$point-md: 768px;
+$point-lg: 992px;
+$point-xl: 1200px;
+
+.bsgFontLight{
+	font-weight: 300;
+}
+.bsgFontRegular{
+	font-weight: 400;
+}
+.bsgFontItalic{
+	@extend .bsgFontRegular;
+	font-style: italic;
+}
+.bsgFontMedium{
+	font-weight: 500;
+}
+.bsgFontSemiBold{
+	font-weight: 600;
+}
+.bsgFontBold{
+	font-weight: $font-weight-bold;
+}
+.bsgFontBoldItalic{
+	@extend .bsgFontBold;
+	font-style: italic;
+
+}
+
+
+
+.textColorMain{
+	color: $font-color-main;
+}
+.textColorLight{
+	color: $font-color-light;
+}
+.textColorLight{
+	color: $font-color-light;
+}
+.textColorWhite{
+	color: $font-color-white;
+}
+.fontBold{
+	font-weight: 700;
+}
+.bg-footer{
+	background-color: $bg-color-footer;
+}

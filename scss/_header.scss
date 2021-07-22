@@ -1,7 +1,7 @@
 .nav {
     height: 50px;
     width: 100%;
-    background-color: $bg-color-nav;
+    background-color: $bg-color-footer;
     position: fixed;
     z-index: 3;
   }  
@@ -29,7 +29,7 @@
     color: #efefef;
   }  
   .nav > .nav-links > a:hover {
-    background-color: $color-hover;
+    background-color: $font-color-main-hover;
   }  
   .nav > #nav-check {
     display: none;
